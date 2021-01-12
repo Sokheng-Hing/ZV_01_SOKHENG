@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c04_brown.html</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: solid 5px black;
+            background-color: brown;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle div {
+            margin: -10%;
+        }
+
+        .box-up {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border: solid white 5px;
+            position: absolute;
+            top: 25%;
+        }
+
+        .box-left {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: solid black 5px;
+            position: absolute;
+            left: 25%;
+        }
+
+        .box-down {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border: solid white 5px;
+            position: absolute;
+            bottom: 25%;
+        }
+
+        .box-right {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: solid black 5px;
+            position: absolute;
+            right: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle">
+            <div class="box-up"></div>
+            <div class="box-left"></div>
+            <div class="box-down"></div>
+            <div class="box-right"></div>
+        </div>
+    </div>
+</body>
+
+</html>

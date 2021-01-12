@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>c07_login.html</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      div.box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      form {
+        height: 150px;
+        width: 200px;
+        border: 20px solid black;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      label {
+        font-size: 22px;
+      }
+
+      input {
+        padding: 3px;
+      }
+
+      form div:last-child {
+        padding-top: 10px;
+      }
+
+      form div:last-child input:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <form action="">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" />
+        </div>
+        <div>
+          <input type="submit" value="Connect" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

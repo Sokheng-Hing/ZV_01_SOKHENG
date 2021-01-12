@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>c05_black.html</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .main-circle,
+      .main-circle div {
+        border-radius: 50%;
+        border: black solid 5px;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .main-circle {
+        width: 450px;
+        height: 450px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Medium Circle */
+      .medium-circle {
+        width: 150px;
+        height: 150px;
+        position: relative;
+      }
+
+      .medium-circle-top {
+        position: absolute;
+        top: 7.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+      }
+
+      .medium-circle-right {
+        position: absolute;
+        right: 7.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+      }
+
+      .medium-circle-left {
+        position: absolute;
+        left: 7.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+      }
+
+      .medium-circle-bottom {
+        position: absolute;
+        bottom: 7.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+      }
+
+      /* First Small Circle */
+      .small-circle:first-child .very-small-circle {
+        background-color: black;
+      }
+
+      /* Small Circle */
+      .small-circle {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Very Small Circle */
+      .very-small-circle {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Very Small Circle Top */
+      .medium-circle-top .small-circle:first-child .very-small-circle {
+        background-color: black;
+      }
+
+      .medium-circle-top .small-circle:last-child {
+        background-color: black;
+      }
+
+      .medium-circle-top .small-circle:last-child .very-small-circle {
+        background-color: white;
+      }
+
+      /* Very Small Circle Bottom */
+      .medium-circle-bottom .small-circle:first-child .very-small-circle {
+        background-color: white;
+      }
+
+      .medium-circle-bottom .small-circle:first-child {
+        background-color: black;
+      }
+
+      .medium-circle-bottom .small-circle:last-child .very-small-circle {
+        background-color: black;
+      }
+
+      /* Very Small Circle Left */
+      .medium-circle-left .small-circle:first-child .very-small-circle {
+        background-color: white;
+      }
+
+      .medium-circle-left .small-circle:first-child {
+        background-color: black;
+      }
+
+      .medium-circle-left .small-circle:last-child .very-small-circle {
+        background-color: black;
+      }
+
+      /* Very Small Circle Right */
+      .medium-circle-right .small-circle:first-child .very-small-circle {
+        background-color: white;
+      }
+
+      .medium-circle-right .small-circle:last-child {
+        background-color: black;
+      }
+
+      .medium-circle-right .small-circle:last-child .very-small-circle {
+        background-color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-circle">
+        <div class="small-circle">
+          <div class="very-small-circle"></div>
+        </div>
+
+        <div class="medium-circle medium-circle-top">
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+        </div>
+
+        <div class="medium-circle medium-circle-right">
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+        </div>
+
+        <div class="medium-circle medium-circle-left">
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+        </div>
+
+        <div class="medium-circle medium-circle-bottom">
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+          <div class="small-circle">
+            <div class="very-small-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
