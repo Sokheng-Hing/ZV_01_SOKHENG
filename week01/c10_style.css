@@ -1,0 +1,36 @@
+p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p1 {
+    color: red;
+    background-color: blue;
+}
+
+.p2 {
+    color: blue;
+    background-color: red;
+}
+
+.p3 {
+    color: yellow;
+    background-color: green;
+    ;
+}
+
+.p4 {
+    color: green;
+    background-color: orange;
+}
+
+.p5 {
+    color: purple;
+    background-color: yellow;
+}
+
+.p6 {
+    color: yellow;
+    background-color: purple;
+}
